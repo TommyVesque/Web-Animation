@@ -1,11 +1,11 @@
 .site{
     margin: 0;
-    font-family: 'Josefin Sans', sans-serif;
-    background-image: linear-gradient(to bottom right, #50A7C2, #B7F8DB);
+    font-family: 'Arial', sans-serif;
+    background-image: url('Shop/Court3.png');
 }
 
 .site-header{
-    height: 100px;
+    height: 300px;
 }
 
 .visually-hidden{
@@ -18,25 +18,164 @@
     padding: 0;
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
-    margin: -1px;
+   
 }
 
 /*
 Navigation
 */
-.navigation{
-    background: white;
+#navigation{
+    padding: 10px 20px 10px 20px;
+    height: 100px;
+    background:white;
+    box-sizing: border-box;
     display: flex;
-    justify-content: space-evenly;
+    margin: -14px;
 }
 
 
-.button{
-    margin: 10px;
+.logo{ 
+    margin-top: 10px;
+}
+
+.logo{ 
+    animation: sprung 3s infinite;
+
+}
+@keyframes sprung{
+    0%{
+        transform: translateY(10px)
+    }
+    50%{
+        transform: translateY(15px)
+    }
+    100%{
+        transform: translateY(10px)
+    }
+    
+}
+
+
+
+
+.menu{
+    margin-left: 480px;
+    margin-right: 300px; 
+    margin-top: 30px;
+    display: flex;
+    list-style: none;
+}
+
+.menu a{
+    margin-right: 40px;
+    color: black;
+    text-decoration: none;
+    font-size: 14pt;
+}
+
+
+
+.menu .shop::before{
+    position: absolute;
+    width: 0px;
+    height: 1.2%;
+    left: 735px;
+    top: 49px;
+    content: '';
+    background: black;
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+.cart{
+    margin-top: 20px;
     background: none;
     border: none;
     cursor: pointer;
     height: 40px;
+}
+
+/*
+Banner
+*/
+
+.webstuff {
+    position: relative;
+    top: -250px;
+}
+
+.webfirst {
+    position: absolute;
+   color: black;
+   text-transform: uppercase;
+}
+.websecond {
+    position: absolute;;
+   color:black;
+   font-size: 50px;
+   text-transform: uppercase;
+}
+
+
+.banner {
+
+    opacity: 0.8;
+    margin-bottom: 70px;
+    margin-top: -185px;
+    margin-left: 50px;
+    padding: 0px;
+    height: 400px;
+    width: 800px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#court {
+
+    opacity: 0.8;
+    margin-bottom: 70px;
+    margin-top: -404px;
+    padding: 0px
+
+}
+
+.gamestuff {
+    position: relative;
+    top: -260px;
+    margin-left: 100px;
+
+}
+.gamefirst {
+    position: absolute;
+   color:black;
+   text-transform: uppercase;
+}
+.gamesecond {
+    position: absolute;;
+   color:black;
+   font-size: 40px;
+   text-transform: uppercase;
+}
+
+#ball {
+    width: 60px;
+    top: -250px;
+    position: relative;
+    right: -600px;
+}
+#ball2 {
+    width: 60px;
+    top: -250px;
+    position: relative;
+    right: -600px;
+}
+
+.last_logo {
+    width: 353px;
+    height: 300px;
+    position: relative;
+    left: 215px;
+    top: -482px;
 }
 
 /*
@@ -45,16 +184,205 @@ Content
 .site-content{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding: 0;
     width: 900px;
 }
-.flex-img{
-    margin: 0 auto 0 auto;
-    padding: 0;
-    list-style: none;
+
+
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product-container,
+.product-container-2{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    padding-right: 5px;
 }
+
+.product-container div,
+.product-container-2 div{
+    margin-top: 22px;
+}
+
+h3{
+    font-weight: normal;
+}
+
+p{
+    margin-top: -10px;
+    font-size: 11pt;
+}
+
+/* 
+ADD TO CART BUTTON
+*/
+.btn{border-radius: 25px;background-color: #00a0d6; color: rgb(0, 0, 0); position: relative; height: 3rem; width: 10rem;overflow: hidden; }
+
+.product-column button{
+    padding-left: 135px;
+    padding-right: 135px;
+
+}
+
+.product-column-2 button{
+    padding-left: 183px;
+    padding-right: 183px;
+}
+
+
+
+.product-column .btn-background,
+.product-column-2 .btn-background{
+    border-color: rgb(255, 255, 255);
+}
+
+.product-column .btn,
+.product-column-2 .btn{
+    margin-top: 15px;
+    font-size:15px;
+    border-style: solid;
+    background: rgb(245, 209, 90);
+    vertical-align: bottom;
+
+}
+
+
+
+.product-column .btn-background:hover,
+.product-column-2 .btn-background:hover{
+    transform: translate(0.2em, -0.1em);
+    cursor: pointer;
+}
+
+.flex-img-1{
+    margin-right: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    
+}
+.flex-img-2{
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.product-column{
+    margin-bottom: 60px;
+}
+
+
+.product-column-2{
+    margin-bottom: 60px;
+    margin-right: 50px;
+}
+
+
+
+
+/* 
+BACK TO TOP BUTTON
+*/
+.arrow-up{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 30px; 
+    border: none;
+    background: none;
+}
+
+
+
+.arrow-up>img{
+    height: 35px;
+    font-size: 15px;
+}
+
+/*
+FOOTER
+*/
+footer{
+    padding: 20pt;
+    font-size: 10pt;  
+    background-size: cover;
+    background-color: white;
+    height: 147px;
+}
+
+.footer-container{
+    margin-top: -10px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.footer-menu-container h2 a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-menu li{
+    margin-left: -41px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-menu li a{
+   
+    text-decoration: none;
+    line-height: 1.8;
+    font-size: 11pt;
+    color: black;
+
+}
+
+.footer-container2{
+    margin-top: 0px;
+    display: flex;
+    
+}
+
+.footer-menu-container2 h2 a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-menu2 li{
+    margin-left: -41px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-menu2 li a{
+   
+    text-decoration: none;
+    line-height: 1.8;
+    font-size: 11pt;
+    color: black;
+}
+
+.social-container{
+    max-width: 200px;
+}
+
+.social-container ul li{
+    list-style: none;
+}
+
+.social-icon a{
+    text-decoration: none;
+    
+}
+
+
